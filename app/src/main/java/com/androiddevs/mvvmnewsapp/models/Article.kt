@@ -4,6 +4,20 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.io.Serializable
 
+/*
+ This class extends serializable because we need to send arrticle from fragment to fragment
+ So we create the bundle
+ val bundle = Bundle().apply {
+                putSerializable("article", it)
+            }
+            findNavController().navigate(
+                R.id.action_breakingNewsFragment_to_articleFragment,
+                bundle
+            )
+
+ we go to the navccontroller in the resource file and add article as argumnet for the article fragment
+ */
+
 @Entity(
     tableName = "articles"
 )

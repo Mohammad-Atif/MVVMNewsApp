@@ -11,6 +11,19 @@ import com.androiddevs.mvvmnewsapp.models.Article
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_article_preview.view.*
 
+/*
+This is the Adapter for the recycler view
+
+Adapter-
+Adapter is a bridge between UI component and data source that helps us to fill data in UI component.
+It holds the data and send the data to an Adapter view then view can takes the data from the adapter
+view and shows the data on different views like as ListView, GridView, Spinner etc.
+
+Here we implement onClicklistener a lambda function to implement the click events on the adapter view items
+
+
+ */
+
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
 
     inner class ArticleViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)

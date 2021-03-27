@@ -6,6 +6,10 @@ import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+/* this is a API interface which contains all the queries of the API like to get  breaking news and search for news
+All the queries will return a response here we get that response as news response
+We created the NewsResponse classes from Json to kotlin class converter
+* */
 interface NewsAPI {
 
     @GET("v2/top-headlines")

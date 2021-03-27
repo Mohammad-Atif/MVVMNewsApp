@@ -7,6 +7,13 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.androiddevs.mvvmnewsapp.models.Article
 
+
+/*
+ Here we used typeconverter because Room can only store primitive data types like Int ,String ,Boolean etc
+
+ And to store our custom object Like Source in Article  Data class (val source: Source,) we need a type converted which converts this into a primitive one
+ To view this converter class visit db-converter
+ */
 @Database(
     entities = [Article::class],
     version = 1

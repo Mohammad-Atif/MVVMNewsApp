@@ -6,6 +6,15 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/*
+This is the main Retrofit singleton Class , Here we used companion object so that we do not need to create
+object of that class to use the retrofit
+we use this to request like  RetrofitInstance.api.searchForNews(searchQuery, pageNumber)
+the searchforNews function is declared in the NewsAPI interface
+
+retrofit by lazy means that it only initialised on first call
+for more on lazy visit - Smartherd lazy on youtube
+ */
 class RetrofitInstance {
     companion object {
 
